@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿ using System.Collections.Generic;
 using Treehouse.FitnessFrog.Models;
 
 namespace Treehouse.FitnessFrog.Data
