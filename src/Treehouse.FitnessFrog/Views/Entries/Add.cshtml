@@ -1,6 +1,7 @@
 ﻿
 @model Treehouse.FitnessFrog.Models.Entry
-@using Treehouse.FitnessFrog.Models 
+@using Treehouse.FitnessFrog.Models
+
 
 @{
     ViewBag.Title = "Add Entry";
@@ -18,7 +19,7 @@
 
             <div class="form-group">
                 @Html.LabelFor(m => m.Date, new { @class = "control-label"})
-                @Html.TextBoxFor(m => m.Date, "{0:d}", new { @class = "form-control"})
+                @Html.TextBoxFor(m => m.Date, "{0:d}", new { @class = "form-control datepicker"})
 
             </div>
 
