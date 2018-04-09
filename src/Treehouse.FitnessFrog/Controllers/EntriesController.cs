@@ -55,6 +55,12 @@ namespace Treehouse.FitnessFrog.Controllers
         [ActionName("Add"), HttpPost]
         public ActionResult AddPost(Entry entry)
         {
+
+            if (ModelState.IsValidField("Duration") && entry.Duration <= 0)
+            {
+                ModelState.AddModelError("Duration", "The Duration has to be greater than zero.");
+            }
+
             if (ModelState.IsValid)
             {
                 _entriesRepository.AddEntry(entry);
